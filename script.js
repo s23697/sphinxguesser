@@ -37,7 +37,7 @@ function makeNextGuess() {
   }
 
   guess = getMiddle(low, high);
-  setStatus(`Is your number ${formatNumber(guess)}?`);
+  //setStatus(`Is your number ${formatNumber(guess)}?`);
   render();
 }
 
@@ -55,7 +55,7 @@ resetBtn.addEventListener("click", () => {
   low = MIN_NUMBER;
   high = MAX_NUMBER;
   guess = getMiddle(low, high);
-  setStatus(`Is your number ${formatNumber(guess)}?`);
+  //setStatus(`Is your number ${formatNumber(guess)}?`);
   render();
 });
 

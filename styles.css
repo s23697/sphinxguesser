@@ -46,7 +46,7 @@ button {
 .range-label {
   margin: 0 0 8px;
   color: var(--accent);
-  font-size: 14px;
+  font-size: 24px;
   font-weight: 700;
 }
 

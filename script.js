@@ -1,6 +1,7 @@
 const MIN_NUMBER = 1;
 const MAX_NUMBER = 9999;
 
+const rangeLabelEl = document.querySelector(".range-label");
 const guessEl = document.querySelector("#guess");
 const statusEl = document.querySelector("#status");
 const lessBtn = document.querySelector("#lessBtn");
@@ -25,6 +26,7 @@ function setStatus(message, type = "") {
 }
 
 function render() {
+  rangeLabelEl.textContent = `${formatNumber(low)}-${formatNumber(high)}`;
   guessEl.textContent = formatNumber(guess);
 }
 

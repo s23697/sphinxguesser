@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Number Finder 0001-9999</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app" aria-labelledby="title">
+      <section class="panel">
+        <p class="range-label">0001-9999</p>
+        <h1 id="title">Number Finder</h1>
+        <p class="hint">Think of a number. I will guess it. Tell me if your number is more or less.</p>
+
+        <div class="guess-box" aria-live="polite">
+          <span class="guess-label">My guess</span>
+          <strong id="guess">5000</strong>
+        </div>
+
+        <div class="controls" aria-label="Guess controls">
+          <button id="lessBtn" type="button">Less</button>
+          <button id="moreBtn" type="button">More</button>
+        </div>
+
+        <p id="status" class="status">Is your number 5000?</p>
+        <button id="resetBtn" class="reset" type="button">Reset</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
